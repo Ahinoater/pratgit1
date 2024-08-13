@@ -1,5 +1,6 @@
 def validar_correo(correo)
-  regex = /\[\w+\-,]+@[a-z\d\-,]+\.[a-z]+\z/i
+  regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+
   if correo.match?(regex)
     puts "Correo Válido"
   else 
